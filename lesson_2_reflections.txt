@@ -3,3 +3,6 @@ In the initialization I create a new hidden folder which will probably contain a
 
 2. How is the staging area different from the working directory and the repository? What value do you think it offers?
 Staging area is a different place where files to be committed are put before being actually committed. Maybe it isn't a real folder, but only a file containing the names of the files to be committed. I think it's a pretty smart feature because I can choose which files should be committed; I can choose which files in the folder should be committed; moreover, if I had changed only some files, I can commit only them and not the other untouched files. At present, I don't know whether it's better then committing every single file; it could be for hard drive space reasons and also for git diff output reason. Anyway, thinking about which files to commit before committing it's a good idea.
+
+3. How can you use the staging area to make sure you have one commit per logical change?
+In the staging area I can check with the commands git diff and git diff --staged what I'm changing and which files I'm going to commit. So I'm sure of what I'm committing and whether there's only a logical change.
