@@ -1,0 +1,24 @@
+1. Comparing two text files with Windows, Linux and Mac is possible through the command line; however, to me it is not very user-friendly. With the Windows Power Shell I need to use the fc.exe command (files compare)
+
+2. How did viewing a diff between two versions of a file help you see the bug that was introduced? 
+I guess it could help me by realizing rapidly where the change occurred and, in this way, helping me in debugging.
+
+3. There are version control features in Drive, DropBox, Wikipedia. I think they could be useful as I can see if anyone (me included) did any change in what we're working on. At present moment, I couldn't think to anything better.
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+On a long term, see what I did previously could help me to avoid paths I already tried to follow without success; maybe I could restore some features I included in the past but in that moment I didn't need and now I'm trying to remember them to include them in the program.
+
+4. Every commit (that is a version) should be saved after every logical modification to the code, not every little change nor after too many different changes. I think this way many many commits are going to be created; however, I can imagine that committing every change in different functions and so on can be very useful in keeping track of what is going on. For example, with my SWE2D code sometimes I needed to go back to a previous version of the code or of a function, but I had to do it manually with ctrl+z.
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Choosing manually when to commit is a matter of being clever; Google Docs saves everything and going back to previous relevant versions of the document might be very hard; saving manually and adding some comment to that version can be a useful and intelligent way of keeping track of relevant changes.
+
+5. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+These systems might be different because of the purpose they have been conceived: while Git is thought to be used for coding, which usually involves many files related to each other, Google Docs is focused on working on single files at once, even if they could be used together (a spreadsheet with calculations and a doc with a presentation and a discussion). Generally, the possibility of saving a commit with multiple files in a repository is better than saving version of single files.
+
+6. How can you use the commands git log and git diff to view the history of files?
+They can be used when I have many files (or just a single file) with many versions (commits) saved (many files + many commits = repository); git log helps me dealing with what changed in every commit, in particular thanks to the comment added to every commit; git diff helps me seeing which lines were added and which ones were deleted. It's very useful, but maybe copying manually every commit's ID is not so user friendly. By seeing the git diff output I can clearly imagine that saving too large commits would be very confusing, while smaller ones could be useless.
+
+7. How might using version control make you more confident to make changes that could break something?
+If I knew that a previous working version of my code is saved and easily accessible, I would modify my actual code without too many worries. Knowing that a possible bug introduction can be easily reverted, I feel more confident in coding and making experiments, using intelligence, of course.
+
+8. Now that you have your workspace set up, what do you want to try using Git for?
+I think I would like to try to use it first to learn how to program app for Android; then I think I could use it to improve my work with LaTex (actually, it is code, isn't it?).
