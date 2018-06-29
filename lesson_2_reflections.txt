@@ -12,3 +12,7 @@ Branches can be useful when I want to make new changes which could affect the ov
 
 5. How do the diagrams help you visualize the branch structure?
 Diagrams help me in comprehending when I created a new branch, which commits I did and the overall feature of a branch by reading commits' messages. The visualization is useful to get the overall idea of my project. However logging only a part of the whole structure of my project would be useful.
+
+6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches results in merging the code of the branches' tips while comparing with the parent commit from which the branch originated (the first common parent commit). If a line is present in both branches, it will be kept; if a line is not present in a branch, but it was in the parent and the other branch, it will be deleted; if a line is present in a branch but not in the parent nor in the other branch, it will be added.
+The representation in the diagram show how we are working: some code is getting unified with other code, so the new commit will result in a mix of the code. Choosing then on which branch saving the new commit is very important.
