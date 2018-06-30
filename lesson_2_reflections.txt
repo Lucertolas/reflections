@@ -16,3 +16,6 @@ Diagrams help me in comprehending when I created a new branch, which commits I d
 6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 Merging two branches results in merging the code of the branches' tips while comparing with the parent commit from which the branch originated (the first common parent commit). If a line is present in both branches, it will be kept; if a line is not present in a branch, but it was in the parent and the other branch, it will be deleted; if a line is present in a branch but not in the parent nor in the other branch, it will be added.
 The representation in the diagram show how we are working: some code is getting unified with other code, so the new commit will result in a mix of the code. Choosing then on which branch saving the new commit is very important.
+
+7. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging is fast and quite reliable, but it can lead to some mistakes in the code; on the other hand manual merging can be easily done when there are few lines of code to merge, but when lines are too much it can be quite difficult to use. Anyway, I think a manual control of the proper functionality of the code is required after every merge.
